@@ -1,0 +1,108 @@
+body {
+  background-color: cad2c5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: 1d3557;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h2, h3 {
+  color: 354f52;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+a {
+  color: 84a98c;
+  text-decoration: none;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.card{
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li{
+  display: inline-block;
+  padding: 0px 8px;
+}
+
+.btn{
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  border-radius: 10px;
+  background-size: 200%;
+  text-decoration: none;
+}
+.btn1 {
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #556B2F,
+    #808000,
+    #6B8E23
+  );
+}
+
+.btn1:hover {
+  background-position:right ;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+#intro p {
+  margin-bottom: 40px;
+}
+
+#footer a {
+  font-size: 24px;
+}
+
+#footer a:hover{
+  color: darkcyan;
+}
+
+/* Media Queries */
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
