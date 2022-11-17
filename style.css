@@ -1,5 +1,4 @@
 body {
-  background-color: cad2c5;
   font-family: Arial, Helvetica, sans-serif;
   color: 1d3557;
   font-size: 16px;
@@ -21,6 +20,9 @@ a {
 .container {
   width: 900px;
   margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg,#d2001a,#7462ff);
 }
 
 .card{
