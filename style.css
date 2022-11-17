@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: 1d3557;
+  color: #1d3557;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -13,27 +13,46 @@ h2, h3 {
 }
 
 a {
-  color: 84a98c;
+  color: #84a98c;
   text-decoration: none;
+}
+
+a:hover{
+  color: darkcyan;
 }
 
 .container {
   width: 900px;
   margin: 0 auto;
+  padding: 20px;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(45deg,#d2001a,#7462ff);
+  background: linear-gradient(100deg,#081c15,#1b4332,#2d6a4f,#40916c,#52b788,#74c69d,#95d5b2,#b7e4c7,#d8f3dc,#d8f3dc,#b7e4c7,#95d5b2,#74c69d,#52b788,#40916c,#2d6a4f,#1b4332,#081c15);
+  background-size: 300% 300%;
+  animation: color 10s ease-in infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
 
 .card{
-  background-color: white;
-  padding: 40px;
+  background-color: rgb(205, 227, 221);
+  width: 600px;
+  padding: 30px;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
   border-radius: 4px;
-  margin: 20px 0px;
-  text-align: center;
+  margin: 20px auto;
+  text-align: center;;
 }
-
 
 .list-inline {
   list-style: none;
@@ -89,22 +108,23 @@ a {
 /* Media Queries */
 
 @media (max-width: 960px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
   .container {
-    width: 700px;
+    width: 90%;
+  }
+  .card {
+    width: 90%;
   }
 }
-
+/*
 @media (max-width: 720px) {
-  /* Pour un écran < 720px, cette classe CSS s'applique */
   .container {
     width: 500px;
   }
 }
 
 @media (max-width: 540px) {
-  /* Pour un écran < 540px, cette classe CSS s'applique */
   .container {
     width: 300px;
   }
 }
+*/
